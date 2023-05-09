@@ -588,6 +588,7 @@ class SerialThreadClass(QtCore.QThread):
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
+    app.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
     mwindow = QtWidgets.QMainWindow()
 
     prog = AsgardGUI(mwindow)
